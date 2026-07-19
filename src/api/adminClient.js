@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const defaultApiUrl = import.meta.env.PROD
-  ? "https://backendalijaved.vercel.app/api"
+  ? "https://alijaved-backend.vercel.app/api"
   : "http://localhost:5000/api";
 
 // Separate axios instance that always attaches the admin key header,
