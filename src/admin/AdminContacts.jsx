@@ -1,0 +1,3 @@
+import { useEffect, useState } from "react";
+import adminApi from "../api/adminClient.js";
+export default function AdminContacts() { const [contacts, setContacts] = useState([]); useEffect(() => { adminApi.get("/contact").then((res) => setContacts(res.data)); }, []); return <div className="admin-page"><span className="eyebrow">Inbox</span><h1 className="display">Contacts</h1><div className="admin-project-list">{contacts.map((c) => <div key={c._id} className="service-card"><b>{c.name}</b><span className="admin-muted"> · {new Date(c.createdAt).toLocaleString()}</span><p className="contact-email">{c.email}</p><p>{c.message}</p></div>)}{!contacts.length && <p className="admin-muted">No contact messages yet.</p>}</div></div>; }

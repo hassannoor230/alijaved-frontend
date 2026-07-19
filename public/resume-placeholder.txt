@@ -1,0 +1,3 @@
+Replace this file with your real resume PDF, named e.g. "resume.pdf",
+in client/public/, then update the href in Hero.jsx (or Navbar.jsx)
+from "/resume-placeholder.txt" to "/resume.pdf".
