@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/api/:path*",
+      "destination": "https://alijaved-backend.vercel.app/api/:path*"
+    },
+    {
       "source": "/favicon.ico",
       "destination": "/favicon-red.svg"
     },
