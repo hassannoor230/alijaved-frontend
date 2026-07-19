@@ -79,6 +79,8 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:18px 3
 
 .hero-visual{position:relative;height:560px;}
 .site-motion,.hero-visual,.admin-content{transform-style:preserve-3d;}
+/* Keep fixed dialogs relative to the viewport, not the animated page wrapper. */
+.site-motion{transform:none !important;}
 .photo-frame{
   position:absolute;inset:0 40px 60px 0;
   border-radius:22px;overflow:hidden;
