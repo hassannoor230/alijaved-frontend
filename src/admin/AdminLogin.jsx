@@ -42,7 +42,7 @@ export default function AdminLogin() {
         style={{ width: 360, display: "flex", flexDirection: "column", gap: 16 }}
       >
         <div className="logo" style={{ fontSize: 20 }}>
-          ALI<span className="dot">.</span>ADS <span className="logo-sub">ADMIN</span>
+          ALI<span className="dot">.</span>ECOM <span className="logo-sub">ADMIN</span>
         </div>
         <p style={{ color: "var(--muted)", fontSize: 13.5 }}>
           Enter your admin key to access the dashboard.
