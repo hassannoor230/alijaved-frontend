@@ -23,7 +23,7 @@ export default function Hero() {
               Contact Me ↗
             </a>
             <a
-              href="/resume-placeholder.txt"
+              href="/ali-ecom-cv.pdf"
               download
               onClick={trackResumeDownload}
               className="btn btn-ghost"

@@ -9,7 +9,7 @@ export default function Navbar() {
     <header>
       <nav className="site-nav">
         <div className="logo">
-          ALI<span className="dot">.</span>ADS
+          ALI<span className="dot">.</span>ECOM
           <span className="logo-sub">SOCIAL MEDIA EXPERT</span>
         </div>
         <div className={`nav-links${open ? " is-open" : ""}`}>

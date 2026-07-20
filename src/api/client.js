@@ -1,11 +1,15 @@
 import axios from "axios";
 
+// Use the backend's public Vercel URL in production. Routing requests through
+// the frontend's /api rewrite can trigger Vercel deployment protection (401)
+// before Express receives the public request.
+const productionApiUrl = "https://alijaved-backend-me537jv1j-hassan-noors-projects.vercel.app/api";
 const defaultApiUrl = import.meta.env.PROD
-  ? "/api"
-  : "http://localhost:5000/api";
+  ? productionApiUrl
+  : (import.meta.env.VITE_API_URL || "http://localhost:5000/api");
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || defaultApiUrl,
+  baseURL: defaultApiUrl,
 });
 
 // All public writes have simple, flat fields. Encode them as form data so the

@@ -1,10 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "https://alijaved-backend-me537jv1j-hassan-noors-projects.vercel.app/api/:path*"
-    },
-    {
       "source": "/favicon.ico",
       "destination": "/favicon-red.svg"
     },

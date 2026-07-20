@@ -1,13 +1,14 @@
 import axios from "axios";
 
+const productionApiUrl = "https://alijaved-backend-me537jv1j-hassan-noors-projects.vercel.app/api";
 const defaultApiUrl = import.meta.env.PROD
-  ? "/api"
-  : "http://localhost:5000/api";
+  ? productionApiUrl
+  : (import.meta.env.VITE_API_URL || "http://localhost:5000/api");
 
 // Separate axios instance that always attaches the admin key header,
 // read fresh from localStorage on every request.
 const adminApi = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || defaultApiUrl,
+  baseURL: defaultApiUrl,
 });
 
 adminApi.interceptors.request.use((config) => {

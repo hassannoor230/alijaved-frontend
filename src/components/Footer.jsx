@@ -3,7 +3,7 @@ export default function Footer() {
     <footer>
       <div className="wrap foot-row">
         <div className="logo" style={{ fontSize: "16px" }}>
-          ALI<span className="dot">.</span>ADS
+          ALI<span className="dot">.</span>ECOM
         </div>
         <span>© 2026 All Rights Reserved.</span>
         <div className="foot-socials">
