@@ -40,7 +40,7 @@ export default function CTA() {
               <a href="mailto:info.aliecom@gmail.com">info.aliecom@gmail.com</a>
               <a href="tel:+923367539071">03367539071</a>
               <a href="https://wa.me/923367539071" target="_blank" rel="noreferrer">
-                WhatsApp us directly
+                WhatsApp
               </a>
             </div>
           </div>
