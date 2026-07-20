@@ -36,6 +36,13 @@ export default function CTA() {
             <span className="eyebrow">Let's Grow Your Brand Together</span>
             <h3 className="display">Ready to Scale Your Business?</h3>
             <p>Let's build campaigns that bring more leads, more sales and real growth for your brand.</p>
+            <div className="contact-details">
+              <a href="mailto:info.aliecom@gmail.com">info.aliecom@gmail.com</a>
+              <a href="tel:+923367539071">03367539071</a>
+              <a href="https://wa.me/923367539071" target="_blank" rel="noreferrer">
+                WhatsApp us directly
+              </a>
+            </div>
           </div>
 
           <form className="contact-form" onSubmit={handleSubmit}>
