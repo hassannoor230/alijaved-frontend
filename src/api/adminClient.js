@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const productionApiUrl = "https://alijaved-backend-git-main-hassan-noors-projects.vercel.app/api";
+const productionApiUrl = "https://alijaved-backend.vercel.app/api";
 const defaultApiUrl = import.meta.env.PROD
   ? productionApiUrl
   : (import.meta.env.VITE_API_URL || "http://localhost:5000/api");
