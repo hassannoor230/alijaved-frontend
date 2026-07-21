@@ -71,14 +71,6 @@ export default function Testimonials() {
           <div className="loading-row">Loading testimonials…</div>
         ) : (
           <div className="testi-carousel">
-            <button
-              className="carousel-btn prev-btn"
-              onClick={prevSlide}
-              aria-label="Previous testimonial"
-            >
-              ←
-            </button>
-
             <div className="carousel-container">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -106,23 +98,33 @@ export default function Testimonials() {
               </AnimatePresence>
             </div>
 
-            <button
-              className="carousel-btn next-btn"
-              onClick={nextSlide}
-              aria-label="Next testimonial"
-            >
-              →
-            </button>
+            <div className="carousel-controls">
+              <button
+                className="carousel-btn prev-btn"
+                onClick={prevSlide}
+                aria-label="Previous testimonial"
+              >
+                ←
+              </button>
 
-            <div className="carousel-indicators">
-              {Array.from({ length: totalSlides }).map((_, index) => (
-                <button
-                  key={index}
-                  className={`indicator ${index === currentIndex ? "active" : ""}`}
-                  onClick={() => setCurrentIndex(index)}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
+              <div className="carousel-indicators">
+                {Array.from({ length: totalSlides }).map((_, index) => (
+                  <button
+                    key={index}
+                    className={`indicator ${index === currentIndex ? "active" : ""}`}
+                    onClick={() => setCurrentIndex(index)}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
+
+              <button
+                className="carousel-btn next-btn"
+                onClick={nextSlide}
+                aria-label="Next testimonial"
+              >
+                →
+              </button>
             </div>
           </div>
         )}
